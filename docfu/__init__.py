@@ -88,6 +88,8 @@ class Docfu(object):
 
         self.branch = ''
         self.tag = ''
+        branch = kwargs.get('branch')
+        tag = kwargs.get('tag')
         if branch and self.git_repo:
             self.git_ref_type = 'branch'
             self.git_ref_val = branch
